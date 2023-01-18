@@ -1,7 +1,7 @@
 
 package Test;
 
-import Dominio.DAOArchivos;
+import Dominio.*;
 import java.io.IOException;
 
 
@@ -9,9 +9,10 @@ public class MainCSVMODIFIER {
 
    
     public static void main(String[] args) throws IOException {
-      DAOArchivos archivo = new DAOArchivos();
-      String Archivo = "C:\\Users\\You\\Desktop\\Libro1.csv";
-      archivo.archiveReader(Archivo);
+      Archivos archivo = new Archivos();
+      String url = "C:\\Users\\You\\Desktop\\Libro1.csv";
+      archivo.LeerCSV(url);
+      
       
     }
     

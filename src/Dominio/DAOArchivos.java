@@ -16,7 +16,7 @@ public class DAOArchivos {
         reader = new BufferedReader(new FileReader(archivo));
         while((line = reader.readLine()) != null){
             parts = line.split(",");
-            for (int i = 0; parts.length > i; i++ ) {
+            for (int i =0; parts.length < i ; i++) {
                 System.out.print(parts[i] + "  |  ");
             }
              System.out.println();
